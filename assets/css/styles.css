@@ -703,6 +703,7 @@ section[id], .service-card[id], .svc-featured[id] { scroll-margin-top: 96px; }
 @media (max-width: 880px) {
   /* sticky column is a desktop pattern — unpin when columns stack */
   .split-sticky { position: static; top: auto; }
+  .hide-sm { display: none !important; }
   .nav-toggle { display: flex; }
   .header-cta { display: none; }
   .nav {

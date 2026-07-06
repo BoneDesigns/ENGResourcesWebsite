@@ -35,6 +35,25 @@
     });
   }
 
+  /* ----------  Hero video: desktop only  ----------
+     The mp4 is ~10 MB — skip it on phones, data-saver, and reduced motion;
+     those get the lightweight poster image instead. */
+  var heroVideo = document.querySelector(".hero-media video[data-src]");
+  if (heroVideo) {
+    var conn = navigator.connection || {};
+    var wantVideo = window.matchMedia("(min-width: 881px)").matches && !reduceMotion && !conn.saveData;
+    if (wantVideo) {
+      var src = document.createElement("source");
+      src.src = heroVideo.dataset.src;
+      src.type = "video/mp4";
+      heroVideo.appendChild(src);
+      heroVideo.muted = true; // re-assert: some browsers drop the attribute when the source is attached late
+      heroVideo.load();
+      var p = heroVideo.play();
+      if (p && p.catch) p.catch(function () {});
+    }
+  }
+
   /* ----------  Scroll reveal  ---------- */
   var reveals = document.querySelectorAll(".reveal");
   if (reduceMotion || !("IntersectionObserver" in window)) {
