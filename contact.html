@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — ENG Resources</title>
+  <meta name="description" content="Request a consultation with ENG Resources. Offices in Nashville, Chattanooga, Knoxville, Tuscaloosa, and Atlanta." />
+  <link rel="icon" href="assets/img/eng-logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-solid="true">
+    <div class="container container-wide bar">
+      <a class="brand" href="index.html" aria-label="ENG Resources home"><img src="assets/img/eng-logo.png" alt="" /></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <a class="btn btn-gold" href="contact.html">Service Proposal</a>
+      </nav>
+      <a class="btn btn-gold header-cta" href="contact.html">Service Proposal</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="hero-media"><img src="assets/img/hero.jpg" alt="" aria-hidden="true" /></div>
+      <div class="container page-hero-inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span>Contact</span></nav>
+        <span class="eyebrow is-light">Let's tackle your challenges — together</span>
+        <h1 class="h-display">Get in touch</h1>
+        <p class="lead">Tell us about your site and obligations. We'll scope the right path — often within a single call.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="split">
+          <!-- FORM -->
+          <div class="reveal">
+            <span class="eyebrow">Request a consultation</span>
+            <h2 class="h2 mt-2">Start the conversation.</h2>
+            <div id="form-success" class="form-success mt-3" role="status">
+              <strong>Thank you.</strong> Your message has been received — an ENG Resources engineer will be in touch shortly.
+            </div>
+            <form id="contact-form" class="mt-4" novalidate>
+              <div class="form-grid">
+                <div class="field"><label for="name">Name <span class="req">*</span></label><input id="name" name="name" type="text" autocomplete="name" required /></div>
+                <div class="field"><label for="company">Company</label><input id="company" name="company" type="text" autocomplete="organization" /></div>
+                <div class="field"><label for="email">Email <span class="req">*</span></label><input id="email" name="email" type="email" autocomplete="email" required /></div>
+                <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" /></div>
+                <div class="field full"><label for="service">How can we help?</label>
+                  <select id="service" name="service">
+                    <option value="">Select a service…</option>
+                    <option>Water Treatment Optimization</option>
+                    <option>Runoff &amp; Storm Cleanup</option>
+                    <option>Dust Control &amp; Air Quality</option>
+                    <option>Agricultural Growth Support</option>
+                    <option>Process Operations Consulting</option>
+                    <option>Other / Not sure yet</option>
+                  </select>
+                </div>
+                <div class="field full"><label for="message">Project details <span class="req">*</span></label><textarea id="message" name="message" required placeholder="Tell us about the site, the challenge, and any deadlines or permits involved."></textarea><span class="help">The more context you share, the faster we can scope a path forward.</span></div>
+              </div>
+              <button type="submit" class="btn btn-gold mt-3">Send message <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+              <p class="form-note mt-3">Form is front-end only in this build. Connect it to your email service or CRM (e.g. Formspree, HubSpot) before launch.</p>
+            </form>
+          </div>
+
+          <!-- INFO -->
+          <div class="reveal" data-delay="1">
+            <div class="info-card">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg></span>
+              <div><h4>Email</h4><a href="mailto:info@engresources.com">info@engresources.com</a><p>Replace with your monitored inbox.</p></div>
+            </div>
+            <div class="info-card">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-3 2a12 12 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg></span>
+              <div><h4>Phone</h4><a href="tel:+10000000000">(000) 000-0000</a><p>Replace with your main line.</p></div>
+            </div>
+            <div class="info-card">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10Z"/><circle cx="12" cy="11" r="2"/></svg></span>
+              <div><h4>Regional hubs</h4><p>Nashville · Chattanooga · Knoxville, TN<br />Tuscaloosa, AL · Atlanta, GA</p></div>
+            </div>
+            <div class="info-card">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+              <div><h4>Hours</h4><p>Mon–Fri, 8:00–5:00 CT · Emergency response available for active sites.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAP -->
+    <section class="section-sm" style="padding-top:0">
+      <div class="container">
+        <div class="map-wrap reveal"><div id="map"></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container container-wide">
+      <div class="footer-top">
+        <div class="footer-brand"><img src="assets/img/eng-logo.png" alt="ENG Resources" /><p>Environmental &amp; industrial engineering for operators who need smart, accountable solutions — fast.</p></div>
+        <div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="case-studies.html">Case Studies</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h5>Services</h5><ul><li><a href="services.html#water-resources">Water Resources</a></li><li><a href="services.html#process">Process Optimization</a></li><li><a href="services.html#monitoring">Monitoring &amp; Reporting</a></li><li><a href="services.html#training">Training &amp; Compliance</a></li></ul></div>
+        <div class="footer-col"><h5>Get in touch</h5><ul><li><a href="mailto:info@engresources.com">info@engresources.com</a></li><li><a href="tel:+10000000000">(000) 000-0000</a></li><li>Nashville · Tuscaloosa · Atlanta<br />Knoxville · Chattanooga</li></ul></div>
+      </div>
+      <div class="footer-bottom"><span>© <span id="year">2026</span> ENG Resources. All rights reserved.</span>
+        <span class="social">
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0ZM.4 8.3h4.2V24H.4V8.3Zm7.1 0h4v2.1h.06c.56-1.06 1.93-2.18 3.97-2.18 4.25 0 5.03 2.8 5.03 6.43V24h-4.2v-6.93c0-1.65-.03-3.78-2.3-3.78-2.3 0-2.65 1.8-2.65 3.66V24h-4.2V8.3Z"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.55-1.5h1.65V3.6c-.8-.1-1.6-.15-2.4-.15-2.4 0-4.05 1.45-4.05 4.15v2.3H7.8V13h2.6v8h3.1Z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
