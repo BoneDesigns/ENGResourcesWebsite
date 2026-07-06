@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=2" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -44,7 +44,7 @@
     <!-- ===== HERO (Appalachian drone footage) ===== -->
     <section class="hero">
       <div class="hero-media">
-        <!-- Video source attached by main.js on larger screens only; phones get the poster -->
+        <!-- Video source attached by main.js; skipped for data-saver / reduced-motion users -->
         <video autoplay muted loop playsinline poster="assets/img/hero-poster.jpg" aria-hidden="true" data-src="assets/video/hero-appalachian.mp4"></video>
       </div>
       <span class="hero-sidetag">Serving the Gulf Region — through the Mid-East Coast</span>
@@ -229,6 +229,6 @@
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js?v=2"></script>
 </body>
 </html>

@@ -35,13 +35,13 @@
     });
   }
 
-  /* ----------  Hero video: desktop only  ----------
-     The mp4 is ~10 MB — skip it on phones, data-saver, and reduced motion;
-     those get the lightweight poster image instead. */
+  /* ----------  Hero video (all screens)  ----------
+     Source attached via JS so we can still skip the download for users
+     with data-saver or reduced motion enabled; they get the poster. */
   var heroVideo = document.querySelector(".hero-media video[data-src]");
   if (heroVideo) {
     var conn = navigator.connection || {};
-    var wantVideo = window.matchMedia("(min-width: 881px)").matches && !reduceMotion && !conn.saveData;
+    var wantVideo = !reduceMotion && !conn.saveData;
     if (wantVideo) {
       var src = document.createElement("source");
       src.src = heroVideo.dataset.src;
