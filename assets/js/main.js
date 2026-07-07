@@ -112,7 +112,7 @@
     });
   });
 
-  /* ----------  Contact form (front-end only)  ---------- */
+  /* ----------  Contact form (delivers via FormSubmit)  ---------- */
   var form = document.querySelector("#contact-form");
   if (form) {
     form.addEventListener("submit", function (e) {
@@ -122,8 +122,12 @@
       var success = document.querySelector("#form-success");
       var btn = form.querySelector("button[type=submit]");
       if (btn) { btn.disabled = true; btn.textContent = "Sending…"; }
-      // Placeholder: wire to a real endpoint / email service later.
-      setTimeout(function () {
+      fetch("https://formsubmit.co/ajax/sales@engresources.com", {
+        method: "POST",
+        headers: { "Accept": "application/json" },
+        body: new FormData(form)
+      }).then(function (res) {
+        if (!res.ok) throw new Error("send failed");
         form.reset();
         if (btn) { btn.disabled = false; btn.textContent = "Send message"; }
         if (success) {
@@ -131,7 +135,9 @@
           success.setAttribute("tabindex", "-1");
           success.focus();
         }
-      }, 700);
+      }).catch(function () {
+        if (btn) { btn.disabled = false; btn.textContent = "Try again — or email sales@engresources.com"; }
+      });
     });
   }
 
