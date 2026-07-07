@@ -146,8 +146,8 @@
   if (mapEl && window.L) {
     var locations = [
       { city: "Nashville", region: "Tennessee — Central Hub", lat: 36.1627, lng: -86.7816, hub: true },
-      { city: "Chattanooga", region: "Tennessee", lat: 35.0456, lng: -85.3097 },
-      { city: "Knoxville", region: "Tennessee", lat: 35.9606, lng: -83.9207 },
+      { city: "Morgantown", region: "West Virginia", lat: 39.6295, lng: -79.9559 },
+      { city: "Evansville", region: "Indiana", lat: 37.9716, lng: -87.5711 },
       { city: "Tuscaloosa", region: "Alabama", lat: 33.2098, lng: -87.5692 },
       { city: "Atlanta", region: "Georgia", lat: 33.7490, lng: -84.3880 }
     ];
