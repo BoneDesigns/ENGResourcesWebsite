@@ -712,11 +712,12 @@ section[id], .service-card[id], .svc-featured[id] { scroll-margin-top: 96px; }
   .split, .cols-2, .cols-3, .case-grid, .form-grid, .result-grid { grid-template-columns: 1fr; }
   .split.is-reverse .split-media { order: 0; }
   .cta-inner { flex-direction: column; align-items: flex-start; }
-  /* hero floating card → flows under content on tablet/mobile */
-  .hero { min-height: auto; }
+  /* hero floating card → flows under content on tablet/mobile
+     (stack the flex children so the card sits below the text, full width) */
+  .hero { min-height: auto; flex-direction: column; align-items: stretch; }
   .hero-inner { padding-top: 7.5rem; padding-bottom: 2rem; }
   .hero h1.h-display, .page-hero h1.h-display { font-size: clamp(2.25rem, 8.6vw, 3.6rem); }
-  .hero-card { position: static; width: 100%; margin-top: var(--sp-3); box-shadow: var(--shadow-md); }
+  .hero-card { position: static; display: block; width: auto; margin: var(--sp-3) var(--gutter) 0; box-shadow: var(--shadow-md); }
   .hero-sidetag { display: none; }
   .scroll-cue { display: none; }
   .result-tiles { grid-template-columns: repeat(2,1fr); }
